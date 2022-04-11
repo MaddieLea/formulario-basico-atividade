@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formu</title>
+</head>
+<body>
+    
+
+<!-- Here we are declaring all the fields that will be used.-->
+    <form class="container">
+        <div class="box">
+            <input type="text" id="user" placeholder="Type your username...">
+        </div>
+        <div class="box">
+            <p>Email</p>
+            <input type="email" id="user" placeholder="Type your email...">
+        </div>
+        <div class="box">
+            <p>Password</p>
+            <input type="password" id="user" placeholder="Type your password...">
+        </div>
+    </form>
+
+<!-- Calling javascript script to write the back-front code.-->
+    <script lang="javascript">
+        // Declaring a class as an array
+        class Form {
+            constructor(){
+            this.form = [];
+            }
+            // Adding a method called add: that will save the name, email and password 
+            // from inputs in our HTML.
+            add(name, email, password){
+                this.form.push({
+                     name: name,
+                     email: email,
+                     password: password
+                    });
+                    // A simple debug to check if the info is saving into array.
+                    console.log(this.form);
+            }
+    
+            
+        }
+            var elemName = document.getElementById('name');
+            var elemEmail = document.getElementById('email');
+            var elemPassword = document.getElementById('password');
+
+    </script>
+</body>
+</html>
